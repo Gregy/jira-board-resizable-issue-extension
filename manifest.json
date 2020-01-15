@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "Resizable issue view on Jira boards",
+  "version": "1.0",
+
+  "description": "Makes the Jira issue view on Kanban boards resizable",
+
+  "icons": {
+    "48": "icons/48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/secure/RapidBoard.jspa?*"],
+      "js": ["resizable.js"]
+    }
+  ]
+
+}
